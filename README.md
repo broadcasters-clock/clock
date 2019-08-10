@@ -1,3 +1,76 @@
+# Broadcaster's Clock
+
+A problem many broadcasters face is telling the time correctly while on air.
+
+It is quite common for hosts to get the hours wrong, or if things are busy on the studio to completely mess up the time all together.
+
+In the late 1990s Geoff Robinson, host of Radio New Zealand's Morning Report programme asked me if it was possible to have a clock that showed the time in words. I said that it was, but would probably be a bit of work.
+
+In 2004 I started learning Delphi, and realised this finally was the chance to make Geoff's clock.
+
+This was given to Geoff and installed on a studio computer in 2004, and in a short amount of time other staff were asking for the app. As far as I know it is still in use.
+
+Note that the PCs in most broadcast studios are locked to a master clock, so the time is correct. YMMV.
+
+IT departments tend to be a bit sniffy about installing stuff from random sources they don't know, and I'd often thought of doing an online version.
+
+Even though I left broadcasting in 2016, I still thought it would be a good idea, so here it is!
+
+This form of the clock will allow it to be used by anyone, simply.
+
+The only prerequisite is that the PC you access on needs to be locked to your station master clock.
+
+## Telling time
+
+On air, time is expressed in a somewhat flexible manner.
+
+The following are common:
+
+It is coming up to 10 past 8
+It's a quarter past 4
+It is 5 past 9.
+
+In the first 30 seconds after a minute change, the time is expressed as that minute, or just after.
+
+I.e. At 10:30:15 it is "Half past 10".
+
+In the second 30 seconds after a minute change, the time is usually expressed as coming up to the next minute.
+
+I.e. At 10:37:45 it is "coming up to 23 to 11".
+
+Also note that once the half hours is passed it goes from `past` the current hours to `to` the next hour.
+
+## The clock
+
+The clock presents the time in the manner it would generally be spoken, along with a progress bar so the position in the minute can be clearly seen.
+
+At the 30 second, and 30 minutes marks the clock switch format to `to` mode automatically, and indicated this with a `-` sign. A place sign means it is just past the time specified.
+
+Most broadcasters have to time programming to end at top of each hour. The clock assists by counting down seconds in the last minute of the hours, and changing the colour of the progress bar 15 seconds before the top of the hour.
+
+## Examples
+
+- `- 5 past 10` It is coming up to 5 past 10
+- `+ 5 past 10` It is 5 past 10
+
+- `- 12 to 10` It is nearly 12 to past 10
+- `+ 12 to 10` It's just gone 12 minutes to 10
+
+Broadcasters tend to vary the words and delivery depending on the minute and hour, and to make the time as clear as possible.
+
+
+## The code
+
+This code is released under an MIT license.
+
+The algorithm for displaying the time is based on the original Pascal source. When I ported this over I discovered lots of edge cases, and eventually reverted to the logic in the original source, with improvements allowed by Javascript syntax.
+
+While this is not as clean as I'd like, the approach has been battle tested over the last 15 years.
+
+And yes, there are unit tests.
+
+--
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -26,43 +99,3 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
