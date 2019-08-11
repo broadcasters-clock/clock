@@ -1,19 +1,5 @@
 
 export default function createTimeString(timeParts) {
-
-  if(checkTime(timeParts, 0, 0, 0)){
-    return "Midnight";
-  }
-
-  if(checkTime(timeParts, 12, 0, 0)){
-    return "Midday";
-  }
-
-  return calculateMessage(timeParts);
-
-}
-
-function calculateMessage(timeParts) {
   var hour   = timeParts.hours;
   var minute = timeParts.minutes;
   var second = timeParts.seconds;
@@ -83,11 +69,4 @@ function calculateMessage(timeParts) {
       return `${prefix} ${60-minute} minutes to ${hour}`;
     }
   }
-}
-
-function checkTime(timeParts, hours, minutes, seconds){
-  return (
-    timeParts.hours === hours &&
-    timeParts.minutes === minutes &&
-    timeParts.seconds === seconds) ? true : false;
 }
