@@ -42,6 +42,18 @@ const timeTests = [
       expectedResult: '30 seconds to 10'
   },
 
+  // 12 AM Tests
+  {
+      name: "just after midday",
+      testCase: {hours: 12, minutes: 0, seconds: 7},
+      expectedResult: "+ 12 O'Clock"
+  },
+  {
+      name: "45 seconds after midday",
+      testCase: {hours: 12, minutes: 0, seconds: 45},
+      expectedResult: "- 1 minute past 12"
+  },
+
   // PM Tests
   {
       name: "on the quarter hour PM",

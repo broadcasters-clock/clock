@@ -52,7 +52,7 @@ function calculateMessage(timeParts) {
     return `${prefix} ${hour} O'Clock`;
 
     case 1:
-    return `${prefix} ${minute} minute to ${hour}`;
+    return `${prefix} ${minute} minute past ${hour}`;
 
     case 15:
     return `${prefix} Quarter past ${hour}`;
