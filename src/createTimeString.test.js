@@ -7,12 +7,33 @@ const timeTests = [
   {
       name: "at midnight",
       testCase: {hours: 0, minutes: 0, seconds: 0},
-      expectedResult: 'Midnight'
+      expectedResult: "+ 12 O'Clock"
   },
   {
       name: "at midday",
       testCase: {hours: 12, minutes: 0, seconds: 0},
-      expectedResult: 'Midday'
+      expectedResult: "+ 12 O'Clock"
+  },
+
+  {
+      name: "at 4 past midnight",
+      testCase: {hours: 0, minutes: 4, seconds: 12},
+      expectedResult: "+ 4 minutes past 12"
+  },
+  {
+      name: "at 2 minutes to one AM",
+      testCase: {hours: 0, minutes: 58, seconds: 12},
+      expectedResult: "+ 2 minutes to 1"
+  },
+  {
+      name: "at midday",
+      testCase: {hours: 12, minutes: 7, seconds: 18},
+      expectedResult: "+ 7 minutes past 12"
+  },
+  {
+      name: "at 2 minutes to one PM",
+      testCase: {hours: 12, minutes: 58, seconds: 21},
+      expectedResult: "+ 2 minutes to 1"
   },
 
   // AM tests

@@ -19,14 +19,12 @@ export default function createTimeString(timeParts) {
 
   if(minute > 30) {
     // X minutes to next hour
-    // so bump the display hour
+    // so bump the display hour to the next hour
     hour = hour + 1;
   }
-  else {
-    // the hour is normal
-    if(hour === 0) {
-      hour = 12;
-    }
+
+  if(hour === 0) {
+    hour = 12;
   }
 
   if(hour > 12) {
