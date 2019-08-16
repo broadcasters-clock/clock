@@ -5,8 +5,6 @@ export default function createTimeString(timeParts) {
   var second = timeParts.seconds;
   var prefix = ' ';
 
-  const actualMinute = minute;
-
   if(second > 30) {
     // comming up to next minute
     // so bump the display minute
@@ -49,10 +47,13 @@ export default function createTimeString(timeParts) {
 
     case 59:
     case 60:
-    // case 60 is when we get past 30 seconds to the hour
-    // We override the default behaviour (past/to) in the last minute by checking the actualMinute.
+    /*
+      case 60 is when we get past 30 seconds to the hour
+      we override the default behaviour (past/to) in the last minute
+      by checking the minute passed in.
+    */
 
-    if(actualMinute === 59){
+    if(timeParts.minutes === 59){
       return `${(60 - second)} seconds to ${hour}`;
     }
     else {
