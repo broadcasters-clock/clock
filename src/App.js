@@ -4,6 +4,10 @@ import { Line } from 'rc-progress';
 import createTimeString from './createTimeString';
 import createClockString from './createClockString';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-145382333-1');
+ReactGA.pageview('/');
+
 function App() {
   let date = new Date();
   const [time, setTime] = useState(date);
