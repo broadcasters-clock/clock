@@ -10,27 +10,17 @@ ReactGA.pageview('/');
 
 function App() {
   let date = new Date();
-  const [time, setTime] = useState(date);
   const [timeParts, setTimeParts] = useState(splitDateToHMS(date));
-  const [progress, setProgress] = useState(0)
-  const [clockString, setClockString] = useState('Starting...');
-  const [timeString, setTimeString] = useState('Starting...');
-  const [warning, setWarning] = useState(false);
 
   useInterval(() => {
     let date = new Date();
-    setTime(date);
     setTimeParts(splitDateToHMS(date))
   }, 1000);
 
-  useEffect(() => {
-    setTimeString(createTimeString(timeParts))
-    setClockString(createClockString(timeParts))
-    // +1 here to get the percentage to 100.
-    setProgress(calcuatePercentateFromSeconds(timeParts.seconds));
-    setWarning(calculateWarningState(timeParts));
-  },[time, timeParts]);
-
+  var timeString  = createTimeString(timeParts)
+  var progress    = calcuatePercentateFromSeconds(timeParts.seconds)
+  var clockString = createClockString(timeParts)
+  var warning     = calculateWarningState(timeParts)
 
   return (
     <div className="outer-wrapper">
