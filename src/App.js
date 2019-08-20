@@ -33,21 +33,25 @@ function App() {
 
 
   return (
-    <div className="container">
-      <div className="time-string">
-        {timeString}
-      </div>
-      <div className="line-container">
-        <Line
-          percent={progress}
-          strokeLinecap ="butt"
-          strokeWidth="8"
-          trailColor="#eee"
-          strokeColor={warning ? 'red' : '#666'}
-        />
-      </div>
-      <div className="clock-string">
-        {clockString}
+    <div className="outer-wrapper">
+      <div className="wrapper">
+        <div className="container">
+          <div className="time-string">
+            {timeString}
+          </div>
+          <div className="line-container">
+            <Line
+              percent={progress}
+              strokeLinecap ="butt"
+              strokeWidth="8"
+              trailColor="#eee"
+              strokeColor={warning ? 'red' : '#666'}
+            />
+          </div>
+          <div className="clock-string">
+            {clockString}
+          </div>
+        </div>
       </div>
     </div>
   );
