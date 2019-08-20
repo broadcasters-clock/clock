@@ -7,18 +7,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
+.container{
   padding:20px;
-  /* border: 1px solid black; */
-}
-.time-string {
-  font-size: 50px;
-}
 
-.line-container {
-  width: 400px;
-}
+  .time-string {
+    font-size: 50px;
+    font-size: 10vw;
+  }
 
-.clock-string {
-  font-size: 20px;
+  .clock-string {
+    text-align: center;
+    font-size: 20px;
+    font-size: 7vw;
+    font-family: "courier new", courier, monospace;
+
+  }
+
 }
