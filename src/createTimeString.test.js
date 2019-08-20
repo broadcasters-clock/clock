@@ -129,28 +129,3 @@ let runTimeTests = (tests) => {
 };
 
 runTimeTests(timeTests);
-
-//
-// it('Return the correct string at 11:32:14', () => {
-//   expect(createTimeString({hours: 11, minutes: 32, seconds: 14})).toBe('+ 28 minutes to 12');
-// });
-//
-// it('Return the correct string at 11:32:30', () => {
-//   expect(createTimeString({hours: 11, minutes: 32, seconds: 30})).toBe('+ 28 minutes to 12');
-// });
-
-// it('Return the correct string at 11:32:35', () => {
-//   expect(createTimeString({hours: 11, minutes: 32, seconds: 35})).toBe('- 27 minutes to 12');
-// });
-//
-// it('Return the correct string at 14:32:35', () => {
-//   expect(createTimeString({hours: 14, minutes: 32, seconds: 35})).toBe('- 27 minutes to 12');
-// });
-//
-// it('Return the correct string at 11:32:59', () => {
-//   expect(createTimeString({hours: 11, minutes: 32, seconds: 59})).toBe('- 27 minutes to 12');
-// });
-//
-// it('Return the correct string at 14:32:59', () => {
-//   expect(createTimeString({hours: 14, minutes: 32, seconds: 59})).toBe('- 27 minutes to 3');
-// });
