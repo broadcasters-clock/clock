@@ -72,7 +72,7 @@ const timeTests = [
   {
       name: "45 seconds after midday",
       testCase: {hours: 12, minutes: 0, seconds: 45},
-      expectedResult: "- 1 minute past 12"
+      expectedResult: "− 1 minute past 12"
   },
 
   // PM Tests
@@ -99,7 +99,7 @@ const timeTests = [
   {
       name: "in the latter half of the second to last minute of the hour PM",
       testCase: {hours: 19, minutes: 58, seconds: 45},
-      expectedResult: '- 1 minute to 8'
+      expectedResult: '− 1 minute to 8'
   },
   {
       name: "on the last minute of the hour PM",

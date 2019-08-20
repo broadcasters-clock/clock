@@ -8,7 +8,11 @@ export default function createTimeString(timeParts) {
   if(second > 30) {
     // comming up to next minute
     // so bump the display minute
-    prefix = '-'
+
+    // This is a minus sign, NOT a hyphen
+    // We use to ensure the following string does not move left/right
+    // when the sign chnges on the half minute.
+    prefix = '−'
     minute = minute + 1;
   }
   else {
