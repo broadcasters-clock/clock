@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.outer-wrapper{
+.outer-wrapper {
   display: table;
   position: absolute;
   top: 0;
@@ -16,15 +16,15 @@ body {
   width: 100%;
 }
 
-.wrapper{
+.wrapper {
   display: table-cell;
   vertical-align: middle;
 }
 
-.container{
+.container {
   margin-left: auto;
   margin-right: auto;
-  padding:20px;
+  padding: 20px;
 
   .time-string {
     font-size: 50px;
@@ -36,7 +36,5 @@ body {
     font-size: 20px;
     font-size: 7vw;
     font-family: "courier new", courier, monospace;
-
   }
-
 }
