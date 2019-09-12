@@ -1,7 +1,6 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 
-const TimeString = ({ timeParts, className }) => {
+const TimeString = ({ timeParts }) => {
   const { t } = useTranslation();
 
   function generateString() {
@@ -48,10 +47,10 @@ const TimeString = ({ timeParts, className }) => {
         return `${prefix} ${t("time.quaterPast")} ${hour}`;
 
       case 30:
-        return `${prefix} Half past ${hour}`;
+        return `${prefix} ${t("time.halfPast")} ${hour}`;
 
       case 45:
-        return `${prefix} ${t("time.quaterTo")}${hour}`;
+        return `${prefix} ${t("time.quaterTo")} ${hour}`;
 
       case 59:
       case 60:
@@ -62,21 +61,21 @@ const TimeString = ({ timeParts, className }) => {
       */
 
         if (timeParts.minutes === 59) {
-          return `${60 - second} seconds to ${hour}`;
+          return `${60 - second} ${t("time.secondsTo")} ${hour}`;
         } else {
-          return `${prefix} ${60 - minute} minute to ${hour}`;
+          return `${prefix} ${60 - minute} ${t("time.minuteTo")} ${hour}`;
         }
 
       default:
         if (minute < 31) {
           return `${prefix} ${minute} ${t("time.minutesPast")} ${hour}`;
         } else {
-          return `${prefix} ${60 - minute} ${t("time.minutesTo")}${hour}`;
+          return `${prefix} ${60 - minute} ${t("time.minutesTo")} ${hour}`;
         }
     }
   }
 
-  return <div className={className}>{generateString()}</div>;
+  return generateString();
 };
 
 export default TimeString;

@@ -33,7 +33,9 @@ function Clock() {
     <div className="outer-wrapper">
       <div className="wrapper">
         <div className="container">
-          <TimeString className="time-string" timeParts={timeParts} />
+          <div className="time-string">
+            <TimeString timeParts={timeParts} />
+          </div>
           <div className="line-container">
             <Line
               percent={progress}
@@ -44,7 +46,7 @@ function Clock() {
             />
           </div>
           <div className="clock-string">{clockString}</div>
-          <div className="langSwitcher">
+          <div className="lang-switcher">
             <button onClick={() => changeLanguage("en")}>English</button>
             <button onClick={() => changeLanguage("mi")}>Māori</button>
           </div>
