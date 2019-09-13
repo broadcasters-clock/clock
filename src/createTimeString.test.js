@@ -165,7 +165,7 @@ const timeTests = {
     {
       name: "on the half hour AM",
       testCase: { hours: 9, minutes: 30, seconds: 0 },
-      expectedResult: "+ Haurua mai i te 9"
+      expectedResult: "+ haurua mai i te 9"
     },
     {
       name: "on the 3 quarter hour AM",
@@ -204,7 +204,7 @@ const timeTests = {
     {
       name: "on the half hour PM",
       testCase: { hours: 19, minutes: 30, seconds: 0 },
-      expectedResult: "+ Haurua mai i te 7"
+      expectedResult: "+ haurua mai i te 7"
     },
     {
       name: "on the 3 quarter hour PM",
