@@ -1,0 +1,13 @@
+{
+  "time": {
+    "oclock": "O'Clock",
+    "secondsTo": "seconds to",
+    "minuteTo": "minute to",
+    "minutePast": "minute past",
+    "minutesTo": "minutes to",
+    "minutesPast": "minutes past",
+    "quaterPast": "Quarter past",
+    "halfPast": "Half past",
+    "quaterTo": "Quarter to"
+  }
+}
