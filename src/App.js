@@ -7,8 +7,11 @@ import TimeString from "./TimeString";
 import createClockString from "./createClockString";
 
 import ReactGA from "react-ga";
-ReactGA.initialize("UA-145382333-1");
-ReactGA.pageview("/");
+
+if (process.env.NODE_ENV === "production") {
+  ReactGA.initialize("UA-145382333-1");
+  ReactGA.pageview("/");
+}
 
 function Clock() {
   const { i18n } = useTranslation();
