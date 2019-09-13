@@ -160,7 +160,7 @@ const timeTests = {
     {
       name: "on the quarter hour AM",
       testCase: { hours: 9, minutes: 15, seconds: 0 },
-      expectedResult: "+ Hauwha mai i te 9"
+      expectedResult: "+ hauwhā mai i te 9"
     },
     {
       name: "on the half hour AM",
@@ -170,7 +170,7 @@ const timeTests = {
     {
       name: "on the 3 quarter hour AM",
       testCase: { hours: 9, minutes: 45, seconds: 0 },
-      expectedResult: "+ Hauwha ki te 10"
+      expectedResult: "+ hauwhā ki te 10"
     },
     {
       name: "in the second to last minute of the hour AM",
@@ -199,7 +199,7 @@ const timeTests = {
     {
       name: "on the quarter hour PM",
       testCase: { hours: 19, minutes: 15, seconds: 0 },
-      expectedResult: "+ Hauwha mai i te 7"
+      expectedResult: "+ hauwhā mai i te 7"
     },
     {
       name: "on the half hour PM",
@@ -209,7 +209,7 @@ const timeTests = {
     {
       name: "on the 3 quarter hour PM",
       testCase: { hours: 19, minutes: 45, seconds: 0 },
-      expectedResult: "+ Hauwha ki te 8"
+      expectedResult: "+ hauwhā ki te 8"
     },
     {
       name: "in the second to last minute of the hour PM",
