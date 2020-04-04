@@ -20,6 +20,8 @@ This form of the clock will allow it to be used by anyone, simply.
 
 The only prerequisite is that the PC you access on needs to be locked to your station master clock.
 
+There is a [live version of the clock](https://broadcasters-clock.github.io/clock/) so you don't have to run the code locally.
+
 ## Telling time
 
 On air, time is expressed in a somewhat flexible manner.
@@ -57,7 +59,6 @@ Most broadcasters have to time programming to end at top of each hour. The clock
 - `+ 12 to 10` It's just gone 12 minutes to 10
 
 Broadcasters tend to vary the words and delivery depending on the minute and hour, and to make the time as clear as possible.
-
 
 ## The code
 
