@@ -2,23 +2,23 @@
 
 A problem many broadcasters face is telling the time correctly while on air.
 
-It is quite common for hosts to get the hours wrong, or if things are busy on the studio to completely mess up the time all together.
+It is quite common for hosts to get the hour wrong, or if things are busy in the studio, to completely mess up the time all together.
 
-In the late 1990s Geoff Robinson, host of Radio New Zealand's Morning Report programme asked me if it was possible to have a clock that showed the time in words. I said that it was, but would probably be a bit of work.
+In the late 1990s Geoff Robinson, host of Radio New Zealand's Morning Report programme, asked me if it was possible to have a clock that showed the time in words. I said that it was, but would probably be a bit of work.
 
 In 2004 I started learning Delphi, and realised this finally was the chance to make Geoff's clock.
 
 This was given to Geoff and installed on a studio computer in 2004, and in a short amount of time other staff were asking for the app. As far as I know it is still in use.
 
-Note that the PCs in most broadcast studios are locked to a master clock, so the time is correct. YMMV.
+Note that the PCs in most broadcast studios are locked to a master clock, so the time displayed on the app is correct. YMMV.
 
 IT departments tend to be a bit sniffy about installing stuff from random sources they don't know, and I'd often thought of doing an online version.
 
-Even though I left broadcasting in 2016, I still thought it would be a good idea, so here it is!
+Even though I left RNZ in 2016, I still thought it would be a good idea, so here it is!
 
 This form of the clock will allow it to be used by anyone, simply.
 
-The only prerequisite is that the PC you access on needs to be locked to your station master clock.
+The only prerequisite is that the PC you use the clock on needs to be locked to your station's master clock.
 
 There is a [live version of the clock](https://broadcasters-clock.github.io/clock/) so you don't have to run the code locally.
 
@@ -40,15 +40,15 @@ In the second 30 seconds after a minute change, the time is usually expressed as
 
 I.e. At 10:37:45 it is "coming up to 23 to 11".
 
-Also note that once the half hours is passed it goes from `past` the current hours to `to` the next hour.
+Also note that once the half hour is passed it goes from `past` the current hour to `to` the next hour.
 
 ## The clock
 
-The clock presents the time in the manner it would generally be spoken, along with a progress bar so the position in the minute can be clearly seen.
+The clock presents the time in the manner it would generally be spoken, along with a progress bar so that the position in the minute can be clearly seen.
 
-At the 30 second, and 30 minutes marks the clock switch format to `to` mode automatically, and indicated this with a `-` sign. A place sign means it is just past the time specified.
+At the 30 second mark, and 30 minutes mark, the clock switches format to `to` mode automatically, and indicated this with a minus (`-`) sign. A plus (`+`) sign means it is just past the time specified.
 
-Most broadcasters have to time programming to end at top of each hour. The clock assists by counting down seconds in the last minute of the hours, and changing the colour of the progress bar 15 seconds before the top of the hour.
+Most broadcasters have to time programming up to end at top of each hour. The clock assists by counting down seconds in the last minute of the hour, and changing the colour of the progress bar 15 seconds before the top of the hour.
 
 ## Examples
 
