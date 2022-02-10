@@ -11,7 +11,7 @@
 		"eject": "react-scripts eject"
 	},
 	"dependencies": {
-		"node-sass": "^4.12.0",
+		"node-sass": "^7.0.0",
 		"rc-progress": "^2.5.1",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0",
