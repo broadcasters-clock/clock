@@ -1,40 +1,40 @@
 {
-	"name": "broadcasters-clock",
-	"version": "1.0.0",
-	"homepage": "https://broadcasters-clock.github.io/clock",
-	"scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages master -d build",
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"dependencies": {
-		"node-sass": "^4.12.0",
-		"rc-progress": "^2.5.1",
-		"react": "^16.9.0",
-		"react-dom": "^16.9.0",
-		"react-ga": "^2.6.0"
-	},
-	"devDependencies": {
-		"gh-pages": "^2.1.1",
-		"react-scripts": "3.0.1"
-	},
-	"private": true,
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	}
+  "name": "broadcasters-clock",
+  "version": "1.0.0",
+  "homepage": "https://broadcasters-clock.github.io/clock",
+  "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages master -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "rc-progress": "^3.3.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-ga": "^3.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "react-scripts": "5.0.1"
+  },
+  "private": true,
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
